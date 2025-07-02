@@ -1,0 +1,303 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.main-outer-div {
+    height: fit-content;
+    width: 100%;
+    display: block;
+}
+
+.home-ui {
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.9) 100%), url('../Images/HomeImg/homebgimg.png') no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    width: auto;
+    height: 11vh;
+    padding: 0 10vh;
+    margin: 0 4vw;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ntf-logo {
+    height: auto;
+    width: 12%;
+    align-self: flex-start;
+    align-self: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.lang-select {
+    background-color: transparent;
+    color: white;
+    height: 2.1em;
+    min-width: 80px;
+    width: 7vw;
+    max-width: 120px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-left: auto;
+    align-content: center;
+    justify-self: flex-end;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-signin {
+    background-color: red;
+    height: 2.2em;
+    min-width: 60px;
+    width: 6vw;
+    max-width: 100px;
+    color: white;
+    font-size: 1em;
+    font-weight: 550;
+    margin-left: 10px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.login_div {
+    width: auto;
+    border: none;
+    color: white;
+    justify-items: center;
+    justify-self: center;
+    margin: 20vh auto 0 auto;
+}
+
+.login_div>h1 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 800;
+    user-select: none;
+    margin-bottom: 0.5em;
+}
+
+.login_div>h3 {
+    font-size: 1.3em;
+}
+
+.login_div>h4 {
+    margin: 2em 0 1em 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.signin-field-div {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.email-ip-field {
+    margin: 0;
+    height: 3.5em;
+    width: 60%;
+    padding-left: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.email-ip-field::placeholder {
+    color: rgba(255, 255, 255, 0.745);
+    opacity: 1;
+}
+
+.btn-getstarted {
+    width: 35%;
+    height: 2.4em;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.suggestion-div-main>h1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 1.9em;
+    padding: 0 0 0 18vh;
+}
+
+.suggestion-div {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid black;
+    display: flex;
+    margin: 0;
+    padding: 3vw;
+    padding-top: 6vw;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 0px 15vh;
+}
+
+.suggestion-inner-div {
+    display: flex;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    flex-flow: row;
+    overflow-x: auto;
+    padding: 15px;
+    align-items: center;
+    gap: 2vw;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.suggestion-inner-div::-webkit-scrollbar {
+    display: none;
+}
+
+.sugg-btnback {
+    justify-self: flex-start;
+    margin-right: auto;
+    height: 40%;
+    margin: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border: 1px transparent;
+    align-self: center;
+    font-size: 1.1em;
+}
+
+.sugg-btnnext {
+    justify-self: flex-end;
+    margin-left: auto;
+    height: 40%;
+    margin: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border: 1px transparent;
+    align-self: center;
+    font-size: 1.2em;
+}
+
+.poster-div {
+    display: flex;
+    height: 100%;
+    min-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.poster-div:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.poster-div>img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.feature-div-outer {
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    border: none;
+    background-color: black;
+    display: block;
+    align-items: center;
+    gap: 5px;
+    padding: 2em 7em 0 7em;
+}
+
+.feature-div-outer>h1 {
+    background-color: transparent;
+    color: white;
+    margin: 1em;
+    margin-left: 0;
+    font-size: 1.9em;
+}
+
+.feature-div {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.feature-inner-div {
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 40vh;
+    width: 24%;
+    background: linear-gradient(150deg, rgba(9, 34, 60, 1)20%, rgb(103, 18, 111)100%);
+    padding: 1em;
+}
+
+.feature-inner-div>h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 650;
+}
+
+.feature-inner-div>p {
+    font-weight: 500;
+    color: rgba(245, 245, 245, 0.721);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.feature-inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.feature-inner-div>img {
+    height: 11vh;
+    width: auto;
+    object-fit: contain;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: 0.5em;
+}
