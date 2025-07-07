@@ -6,6 +6,7 @@ import WhatchEverywhere from '../Images/HomeImg/whatcheverywhere.png'
 import KidProfile from '../Images/HomeImg/KidProfile.png'
 import { useEffect, useRef, useState } from 'react';
 import CallApi from '../APIreq/CallApi';
+import FAQsection from '../FAQsection/FAQsection';
 
 function Home(props) {
     const suggestionDivRef = useRef(null);
@@ -111,7 +112,12 @@ function Home(props) {
                     </div>
                 </div>
 
+                <div>
+                    <FAQsection/>
+                </div>
             </div>
+
+
 
             <CallApi geturl={funGetUrl}></CallApi>
         </div>
