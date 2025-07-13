@@ -18,6 +18,6 @@ A responsive Netflix landing page clone built with **React** and **Tailwind CSS*
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/) (optional if you’re using Vite)
+- [BootStrap](https://getbootstrap.com/)
 
 ---
