@@ -8,6 +8,8 @@ body {
     height: fit-content;
     width: 100%;
     display: block;
+    padding-bottom: 4em;
+    background-color: black;
 }
 
 .home-ui {
@@ -78,72 +80,18 @@ body {
     border-radius: 5px;
 }
 
-.login_div {
-    width: auto;
-    border: none;
-    color: white;
-    justify-items: center;
-    justify-self: center;
-    margin: 20vh auto 0 auto;
-}
+/* .horizon-glow {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(ellipse at center, rgba(91, 41, 219, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 90%;
+    box-shadow: 0 0 20px rgb(199, 30, 0);
+    position: absolute;
+    bottom: 20;
+    left: 0;
+    overflow: hidden;
+} */
 
-.login_div>h1 {
-    color: white;
-    font-size: 3.5em;
-    text-align: center;
-    font-weight: 800;
-    user-select: none;
-    margin-bottom: 0.5em;
-}
-
-.login_div>h3 {
-    font-size: 1.3em;
-}
-
-.login_div>h4 {
-    margin: 2em 0 1em 0;
-    font-weight: 400;
-    font-size: 1em;
-}
-
-.signin-field-div {
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-
-.email-ip-field {
-    margin: 0;
-    height: 3.5em;
-    width: 60%;
-    padding-left: 15px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.email-ip-field::placeholder {
-    color: rgba(255, 255, 255, 0.745);
-    opacity: 1;
-}
-
-.btn-getstarted {
-    width: 35%;
-    height: 2.4em;
-    color: white;
-    font-size: 1.5em;
-    font-weight: 700;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    padding: 0;
-}
 
 .suggestion-div-main>h1 {
     background-color: black;

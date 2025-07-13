@@ -6,7 +6,11 @@ import WhatchEverywhere from '../Images/HomeImg/whatcheverywhere.png'
 import KidProfile from '../Images/HomeImg/KidProfile.png'
 import { useEffect, useRef, useState } from 'react';
 import CallApi from '../APIreq/CallApi';
-import FAQsection from '../FAQsection/FAQsection';
+import FAQsection from './FAQsection/FAQsection';
+import LoginFrom from './LoginFrom/LoginFrom';
+import LoginInput from './LoginFrom/LoginInput';
+import HomeFooter from './HomeFooter/HomeFooter';
+
 
 function Home(props) {
     const suggestionDivRef = useRef(null);
@@ -50,18 +54,11 @@ function Home(props) {
                     </select>
                     <button className={HomeCss['btn-signin']}>Sign In</button>
                 </div>
-                <div className={HomeCss['login_div']}>
-                    <h1>Unlimited movies, TV<br /> shows and more</h1>
-                    <h3>Starts at ₹149. Cancel at any time.</h3>
-                    <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
-                    <div className={HomeCss['signin-field-div']}>
-                        <input type='email' className={HomeCss['email-ip-field']} placeholder='Email Address' />
-                        <button className={HomeCss['btn-getstarted']}>
-                            Get Started <i className='bi bi-chevron-right'></i>
-                        </button>
-                    </div>
-                </div>
+                <LoginFrom></LoginFrom>
+
             </div>
+            {/* <div class={HomeCss['horizon-glow']}></div> */}
+
             <div className={HomeCss['suggestion-div-main']}>
                 <h1>Trending Now</h1>
                 <div className={HomeCss['suggestion-div']}>
@@ -113,11 +110,13 @@ function Home(props) {
                 </div>
 
                 <div>
-                    <FAQsection/>
+                    <FAQsection />
                 </div>
+                <div className='w-3/5 items-center justify-self-center text-center pt-[2em]'>
+                    <LoginInput></LoginInput>
+                </div>
+                <HomeFooter></HomeFooter>
             </div>
-
-
 
             <CallApi geturl={funGetUrl}></CallApi>
         </div>
