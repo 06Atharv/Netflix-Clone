@@ -40,7 +40,7 @@ function Home(props) {
 
 
     useEffect(() => {
-        document.title = "Netflix";
+        document.title = "Netflix-Clone";
     }, []);
 
     return (
