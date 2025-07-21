@@ -1,0 +1,144 @@
+/* ------------------------------------------------Poster------------------------------------------------------------- */
+.poster {
+    position: relative;
+}
+
+.poster-img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+
+.title-img {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.title p {
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.btn .btn1 img {
+    width: 25px;
+}
+
+.btn .btn1 {
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.btn .btn1.dark-btn {
+    color: #fff;
+    background-color: #595959b3;
+}
+
+.btn .btn1:hover {
+    background: #ffffffbf;
+}
+
+.btn .btn1.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+/* --------------------------------------------------------------Poster-------------------------------------------------------------------------------------------------------- */
+
+.title-cards {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.card-list {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.card {
+    flex: 0 0 auto;
+    margin: 0 5px;
+    width: 240px;
+    border-radius: 4px;
+
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 5pxpx solid black;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    outline: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-container::before,
+.slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.slider-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 60), transparent);
+}
+
+.slider-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(27, 26, 26, 60), transparent);
+}

@@ -1,5 +1,4 @@
 import HomeCss from './Home.module.css';
-import NtfLogo from '../Images/HomeImg/ntflogo.png';
 import TvImage from '../Images/HomeImg/TvImage.png';
 import DownloadImg from '../Images/HomeImg/DownloadImage.png';
 import WhatchEverywhere from '../Images/HomeImg/whatcheverywhere.png'
@@ -10,6 +9,7 @@ import FAQsection from './FAQsection/FAQsection';
 import LoginFrom from './LoginFrom/LoginFrom';
 import LoginInput from './LoginFrom/LoginInput';
 import HomeFooter from './HomeFooter/HomeFooter';
+import HomeNavBar from './HomeNavBar/HomeNavBar';
 
 
 function Home(props) {
@@ -46,19 +46,10 @@ function Home(props) {
     return (
         <div className={HomeCss['main-outer-div']}>
             <div className={HomeCss['home-ui']}>
-                <div className={HomeCss['nav-bar']}>
-                    <img src={NtfLogo} className={HomeCss['ntf-logo']} alt="Netflix Logo" />
-                    <select className={HomeCss['lang-select']}>
-                        <option>English</option>
-                        <option>Marathi</option>
-                    </select>
-                    <button className={HomeCss['btn-signin']}>Sign In</button>
-                </div>
+                <HomeNavBar></HomeNavBar>
                 <LoginFrom></LoginFrom>
-
             </div>
             {/* <div class={HomeCss['horizon-glow']}></div> */}
-
             <div className={HomeCss['suggestion-div-main']}>
                 <h1>Trending Now</h1>
                 <div className={HomeCss['suggestion-div']}>
@@ -92,20 +83,20 @@ function Home(props) {
                     <div className={HomeCss['feature-inner-div']}>
                         <h3>Enjoy on your TV</h3><br></br>
                         <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-                        <img src={TvImage}></img>
+                        <img src={TvImage} alt='tv-img'></img>
                     </div>
                     <div className={HomeCss['feature-inner-div']}>
                         <h3>Download your shows to watch offline</h3><br></br>
                         <p>Save your favourites easily and always have something to watch.</p>
-                        <img src={DownloadImg}></img>
+                        <img src={DownloadImg} alt='Images'></img>
                     </div>                    <div className={HomeCss['feature-inner-div']}>
                         <h3>Watch everywhere</h3><br></br>
                         <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
-                        <img src={WhatchEverywhere}></img>
+                        <img src={WhatchEverywhere} alt='Images'></img>
                     </div>                    <div className={HomeCss['feature-inner-div']}>
                         <h3>Create Profile for Kids</h3><br></br>
                         <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
-                        <img src={KidProfile}></img>
+                        <img src={KidProfile} alt="images"></img>
                     </div>
                 </div>
 
