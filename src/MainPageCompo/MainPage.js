@@ -30,7 +30,7 @@ function MainPage() {
         return json;
     }
 
-    
+
     useEffect(() => {
         async function getMovie() {
             const data = await movieList()
@@ -89,12 +89,12 @@ function MainPage() {
         <><div className='home'>
             <Navbar />
             <div className='poster'>
-                <img src={poster} className='poster-img'></img>
+                <img src={poster} className='poster-img' alt=''></img>
                 <div className='title'>
-                    <img src={title} className='title-img'></img>
+                    <img src={title} className='title-img' alt=''></img>
                     <p>The Protector is an action-packed drama that follows the journey of a young man discovering his destiny as a mystical guardian, tasked with saving his city from dark forces.</p>
                     <div className='btn'>
-                        <button className='btn1'><img src={play} />Play</button>
+                        <button className='btn1'><img src={play} alt='' />Play</button>
                         <button className='btn1 dark-btn'><img src={info} />info</button>
                     </div>
                 </div>
