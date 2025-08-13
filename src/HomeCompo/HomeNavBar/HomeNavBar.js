@@ -12,11 +12,11 @@ function HomeNavBar(params) {
         <>
             <div className={HomeNavBarCss['nav-bar']}>
                 <img src={NtfLogo} className={HomeNavBarCss['ntf-logo']} alt="Netflix Logo" />
-                <select className={HomeNavBarCss['lang-select']}>
+                <select id='language-selector' className={HomeNavBarCss['lang-select']}>
                     <option>English</option>
                     <option>Marathi</option>
                 </select>
-                <button className={HomeNavBarCss['btn-signin']} onClick={redirectToSignin}>Sign In</button>
+                <button id='btn-signin' className={HomeNavBarCss['btn-signin']} onClick={redirectToSignin}>Sign In</button>
             </div>
         </>
     )
