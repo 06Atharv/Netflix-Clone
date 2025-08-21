@@ -4,6 +4,7 @@ import StepOne from "../SignInCompo/SignInSteps/StepOne";
 import StepTwo from "../SignInCompo/SignInSteps/StepTwo";
 import StepThree from "../SignInCompo/SignInSteps/StepThree";
 import StepFour from "../SignInCompo/SignInSteps/StepFour";
+import PlanPage from "../PlanCompo/PlanPage";
 
 function RegistrationForm() {
   const [step, setStep] = useState(1);
@@ -35,6 +36,7 @@ function RegistrationForm() {
         {step === 2 && <StepTwo onNext={goNext}/>}
         {step == 3 && <StepThree onNext={goNext}/>}
         {step == 4 &&  <StepFour onNext={goNext}/>}
+        {step == 5 && <PlanPage/>}
       </div>
     </>
   );
